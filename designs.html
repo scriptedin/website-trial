@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScriptedIn | Designs</title>
+  <link rel="stylesheet" href="stylesheet{designs}.css">
+  <link rel="icon" type="image/png" href="logo1.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Scripted</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="designs.html">Designs</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+      <section class="hero">
+    <h1>Our Designs</h1>
+    <p class="contact-tagline">Where ideas take shape, and visuals speak louder than words</p>
+
+  </section>
+    <section class="design-gallery">
+    <div class="design-card">
+      <img src="brew and beyond poster.png" alt="Design 1" onclick="openLightbox(this, 'Brew and Beyond poster')">
+    </div>
+    <div class="design-card">
+      <img src="" alt="Coming Soon" onclick="openLightbox(this, 'Coming Soon')">
+    </div>
+    <div class="design-card">
+      <img src="" alt="Coming Soon" onclick="openLightbox(this, 'Coming Soon')">
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Expanded Design">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+    <footer>
+    <p>ScriptedIn - Ideas. Crafted. Scripted.</p>
+    <div class="social">
+      <a href="https://instagram.com/scriptedin" target="_blank">Instagram</a>
+      <a href="mailto:scriptedin@outlook.com">Mail</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+    <script>
+    function openLightbox(img, caption) {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
+
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+      lightboxCaption.textContent = caption;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+
+  
+</body>
+</html>
