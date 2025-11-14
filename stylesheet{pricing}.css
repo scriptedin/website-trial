@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2aa4c;
+  color: #222;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #253439;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 1.6em;
+  color: #f2aa4c;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f2aa4c;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #253439, #f2aa4c);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin: 15px 0 25px;
+}
